@@ -12,7 +12,7 @@
 <body>
   <header>
 
-<!-- navbar -->
+    <!-- navbar -->
     <nav class="navbar navbar-default text-uppercase navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -22,26 +22,26 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">start bootstrap</a>
+          <a class="navbar-brand" href="#start-bootstrap">start bootstrap</a>
         </div>
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active">
-              <a href="#">portfolio</a>
+              <a href="#portfolio">portfolio</a>
             </li>
             <li class="active">
-              <a href="#">about</a>
+              <a href="#about">about</a>
             </li>
             <li class="active">
-              <a href="#">contact</a>
+              <a href="#contact">contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-<!-- jumbotron -->
-    <div class="container-fluid text-center jumbotron green-background">
+    <!-- jumbotron -->
+    <div class="container-fluid text-center jumbotron green-background" id="start-bootstrap">
       <div class="row">
         <div class="col-xs-12 col-md-12 col-lg-12">
           <div class="jumbotron_content">
@@ -56,15 +56,18 @@
               <div class="star-line">
               </div>
             </div>
-            <span class="jumbo-span text-capitalize">graphic artist-web designer-illustrator</span>
+            <span class="jumbo-span text-uppercase">graphic artist-web designer-illustrator</span>
           </div>
         </div>
       </div>
+      <div id="portfolio"></div>
     </div>
 
   </header>
 
   <main>
+
+    <!-- portfolio -->
     <div class="container text-center">
       <div class="row">
         <div class="col-xs-12 col-md-12 col-lg-12">
@@ -83,37 +86,63 @@
       <div class="row">
         <div class="col-xs-12 col-md-6 col-lg-4">
           <div class="hover-green-plus">
+            <div class="plus-figure">
+              <div class="plus-figure-vertical"></div>
+              <div class="plus-figure-horizontal"></div>
+            </div>
             <img src="./img/cabin.png" alt="foto capanna">
           </div>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
           <div class="hover-green-plus">
+            <div class="plus-figure">
+              <div class="plus-figure-vertical"></div>
+              <div class="plus-figure-horizontal"></div>
+            </div>
             <img src="./img/cake.png" alt="foto torta">
           </div>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
           <div class="hover-green-plus">
+            <div class="plus-figure">
+              <div class="plus-figure-vertical"></div>
+              <div class="plus-figure-horizontal"></div>
+            </div>
             <img src="./img/circus.png" alt="foto tenda">
           </div>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
           <div class="hover-green-plus">
+            <div class="plus-figure">
+              <div class="plus-figure-vertical"></div>
+              <div class="plus-figure-horizontal"></div>
+            </div>
             <img src="./img/game.png" alt="foto controller">
           </div>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
           <div class="hover-green-plus">
+            <div class="plus-figure">
+              <div class="plus-figure-vertical"></div>
+              <div class="plus-figure-horizontal"></div>
+            </div>
             <img src="./img/safe.png" alt="foto cassaforte">
           </div>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
           <div class="hover-green-plus">
+            <div class="plus-figure">
+              <div class="plus-figure-vertical"></div>
+              <div class="plus-figure-horizontal"></div>
+            </div>
             <img src="./img/submarine.png" alt="foto sottomarino">
           </div>
         </div>
       </div>
+      <div id="about"></div>
     </div>
 
+    <!-- about -->
     <div class="container-fluid text-center green-background">
       <div class="row">
         <div class="col-xs-12 col-md-12 col-lg-12">
@@ -130,7 +159,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="row">
+        <div class="row justified-text">
           <div class="col-xs-12 col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-2 justify-main-2">
             Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
           </div>
@@ -138,13 +167,43 @@
             You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
           </div>
         </div>
-        <button type="button" name="button">
+        <button type="button" class="btn btn-default main-2-download green-background"><span class="glyphicon glyphicon-open"></span>Download</button>
+      </div>
+      <div id="contact"></div>
+    </div>
 
-          Download
-        </button>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-xs12 col-md-12 col-lg-12">
+          <h1 class="text-uppercase">contact me</h1>
+          <div class="divider-star">
+            <div class="star-line star-line-blue">
+            </div>
+            <div class="star">
+              <span class="glyphicon glyphicon-star star-blue" aria-hidden="true" ></span>
+            </div>
+            <div class="star-line star-line-blue">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <col-xs-12 class="col-md-8 col-md-8 col-md-offset-2 col-lg-offset-2">
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+            <button type="submit" class="btn btn-default">Send</button>
+          </form>
+        </col-xs-12>
       </div>
 
     </div>
+
   </main>
 
   <footer>

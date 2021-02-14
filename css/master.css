@@ -1,7 +1,105 @@
 /* GENERAL */
 
 h1 {
+  margin-top: 40px;
   font-weight: 700;
+}
+
+/* padding per sovrapporre la navbar con l'inizio di ogni sezione all'utilizzo del link corrispondente */
+/* NOTE: per mantenere le proporzioni del mock-up, i div sono posizionati al termine della sezione precedente al loro identificativo */
+#portfolio {
+  padding-top: 40px;
+}
+
+#about {
+  padding-top: 0;  /* NOTE: la sezione about ha già uno spazio superiore di 40px dovuto al margin-bottom che distanzia le immagini */
+}
+
+#contact {
+  padding-top: 40px;
+}
+
+/* CUSTOMIZZAZIONE NAVBAR */
+
+/* padding */
+.navbar .container {
+  padding: 20px 0;
+}
+
+/* colore navbar */
+.navbar, .navbar-collapse {
+  background-color: #2c3e50;
+  font-weight: bold;
+}
+
+.navbar-default {
+  border-color: inherit;
+}
+
+/* testo "brand" */
+.navbar-header a.navbar-brand {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+/* colore sfondo navbar + testo navlink */
+.collapse.navbar-collapse.navbar-right li a {
+  background-color: #2c3e50;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/* effetti hover */
+.navbar .container .navbar-brand:hover {
+  color: #ffffff;
+}
+
+.navbar .container .navbar-brand:active {
+  color: #ffffff;
+}
+
+.navbar .container .navbar-brand:focus {
+  color: #ffffff;
+}
+
+.collapse.navbar-collapse.navbar-right li a:hover {
+  color: #1abc9c;
+  background-color: #2c3e50;
+}
+
+.collapse.navbar-collapse.navbar-right li a:active {
+  color: #1abc9c;
+  background-color: #2c3e50;
+}
+
+.collapse.navbar-collapse.navbar-right li a:focus {
+  color: #1abc9c;
+  background-color: #2c3e50;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #2c3e50;
+}
+
+/* JUMBOTRON */
+
+.green-background {
+  color: #ffffff;
+  background-color: #1abc9c;
+}
+
+img.my-jumbotron {
+  padding-top: 100px;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.jumbo-span {
+  display: block;
+  font-size: 18px;
 }
 
 /* CUSTOMIZZAZIONE DIVIDER STELLA (varianti bianca e blu) */
@@ -38,65 +136,47 @@ div .star-blue {
   color: #2C3E50;
 }
 
-/* CUSTOMIZZAZIONE NAVBAR */
+/* EFFETTO HOVER SULLE IMMAGINI MAIN-2 */
 
-/* padding */
-.navbar .container {
-  padding: 20px 0;
-}
-
-/* colore navbar */
-.navbar, .navbar-collapse {
-  background-color: #2c3e50;
-  font-weight: bold;
-}
-
-.navbar-default {
-  border-color: inherit;
-}
-
-/* testo "brand" */
-.navbar-header a.navbar-brand {
-  color: #ffffff;
-  font-size: 30px;
-}
-
-/* colore sfondo navbar + testo navlink */
-.collapse.navbar-collapse.navbar-right li a {
-  background-color: #2c3e50;
-  color: #ffffff;
-  font-size: 18px;
-}
-
-/* customizzazione effetti hover */
-.navbar .container a:hover {
-  color: #ffffff;
-}
-
-.collapse.navbar-collapse.navbar-right li a:hover {
-  color: #1abc9c;
-  background-color: #2c3e50;
-}
-/* JUMBOTRON */
-
-.green-background {
-  color: #ffffff;
-  background-color: #1abc9c;
-}
-
-img.my-jumbotron {
-  padding-top: 140px;
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-  margin: 20px 0;
+.hover-green-plus {
   display: inline-block;
+  margin-bottom: 40px;
+  position: relative;
 }
 
-.jumbo-span {
-  display: block;
-  font-size: 24px;
-  margin-bottom: 40px;
+.plus-figure {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.plus-figure-vertical, .plus-figure-horizontal {
+  width: 66px;
+  height: auto;
+  border: solid 6px #ffffff;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.plus-figure-vertical {
+  top: calc(50% - 6px);
+  left: calc(50% - 33px);
+  transform: rotate(90deg);
+}
+
+/* effetti hover */
+.hover-green-plus:hover .plus-figure {
+  background-color: rgba(26, 188, 156, 0.9);
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  opacity: 1;
 }
 
 /* SEZIONE 1 MAIN */
@@ -106,13 +186,28 @@ img.my-jumbotron {
   width: 100%;
   max-width: 330px;
   height: auto;
-  margin-bottom: 40px;
   border-radius: 10px;
 }
 
 /* SEZIONE 2 MAIN */
 
+.justified-text {
+  font-size: 18px;
+}
+
 .justify-main-2 {
   text-align: justify;
-  padding: 10px;
+  padding: 0 10px;
 }
+
+.main-2-download {
+  color: #ffffff;
+  border-color: #ffffff;
+  margin-top: 30px;
+}
+
+.glyphicon-open {
+  padding-right: 5px;
+}
+
+/* SEZIONE 3 MAIN */
