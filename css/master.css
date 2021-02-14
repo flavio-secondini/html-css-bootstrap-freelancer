@@ -1,15 +1,48 @@
 /* GENERAL */
 
-/* padding top per non far sovrapporre la navbar fixed al container adiacente */
-/* body {
-  padding-top: 100px;
-} */
+h1 {
+  font-weight: 700;
+}
 
-/* NAVBAR */
+/* CUSTOMIZZAZIONE DIVIDER STELLA (varianti bianca e blu) */
+
+div .divider-star {
+  margin: 10px 0 20px 0;
+}
+
+div .star-line {
+  border: solid 2px #ffffff;
+  width: 100%;
+  max-width: 112px;
+  display: inline-block;
+  position: relative;
+  bottom: 15px;
+  border-radius: 10px;
+}
+
+div .star {
+  display: inline-block;
+  margin: 0 10px 0 12px;
+}
+
+.glyphicon-star {
+  font-size: 38px;
+  color: #ffffff;
+}
+
+div .star-line-blue {
+  border-color: #2C3E50;
+}
+
+div .star-blue {
+  color: #2C3E50;
+}
+
+/* CUSTOMIZZAZIONE NAVBAR */
 
 /* padding */
 .navbar .container {
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 /* colore navbar */
@@ -25,22 +58,61 @@
 /* testo "brand" */
 .navbar-header a.navbar-brand {
   color: #ffffff;
+  font-size: 30px;
 }
 
 /* colore sfondo navbar + testo navlink */
 .collapse.navbar-collapse.navbar-right li a {
   background-color: #2c3e50;
   color: #ffffff;
+  font-size: 18px;
 }
 
+/* customizzazione effetti hover */
+.navbar .container a:hover {
+  color: #ffffff;
+}
+
+.collapse.navbar-collapse.navbar-right li a:hover {
+  color: #1abc9c;
+  background-color: #2c3e50;
+}
 /* JUMBOTRON */
 
-.container-fluid.jumbotron {
+.green-background {
+  color: #ffffff;
   background-color: #1abc9c;
 }
 
 img.my-jumbotron {
-  padding-top: 150px;
+  padding-top: 140px;
+  width: 100%;
+  max-width: 250px;
   height: auto;
-  width: 200px;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.jumbo-span {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+/* SEZIONE 1 MAIN */
+
+/* dimensione immagini */
+.hover-green-plus img {
+  width: 100%;
+  max-width: 330px;
+  height: auto;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+/* SEZIONE 2 MAIN */
+
+.justify-main-2 {
+  text-align: justify;
+  padding: 10px;
 }
